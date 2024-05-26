@@ -1,0 +1,73 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.40813,
+                    -33.93256
+                ]
+            },
+            "properties": {
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "On Kloof",
+                "city": "Kapstadt",
+                "country": "Südafrika",
+                "google-link": "https://maps.app.goo.gl/v22GyBN9jVTU9nxi9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.8975792,
+                    -32.8093067
+                ]
+            },
+            "properties": {
+                "timestamp": "2023-02-01 12:00:00",
+                "name": "Milk Thistle Loft & Studio",
+                "city": "Paternoster",
+                "country": "Südafrika",
+                "google-link": "https://maps.app.goo.gl/4xERHAJdmLyCV1X86"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.1253809,
+                    -25.0617205
+                ]
+            },
+            "properties": {
+                "timestamp": "2023-03-01 14:00:00",
+                "name": "Umbhaba Eco Lodge",
+                "city": "Hazyview",
+                "country": "Südafrika",
+                "google-link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.8104203,
+                    -1.2704728
+                ]
+            },
+            "properties": {
+                "timestamp": "2023-03-01 14:00:00",
+                "name": "Elite Residence",
+                "city": "Nairobi",
+                "country": "Kenia",
+                "google-link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
+            }
+        }
+    ]
+}

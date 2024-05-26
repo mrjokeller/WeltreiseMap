@@ -2,31 +2,19 @@
 <html>
 
 <head>
-    <title>Leaflet Map</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Weltreise Carolin & Jonathan</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <style>
-        #map {
-            height: 400px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="map.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 
-<body>
+<body onload="initMap()">
+    <div class="controls" id="checkboxContainer">
+        <!-- Checkboxes will be dynamically added here -->
+    </div>
     <div id="map"></div>
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-            maxZoom: 18,
-        }).addTo(map);
-
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup('A marker on the map.')
-            .openPopup();
-    </script>
 </body>
 
 </html>
