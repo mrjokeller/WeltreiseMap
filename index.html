@@ -13,29 +13,27 @@
     <script src="map.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://kit.fontawesome.com/2cc61ebdfb.js" crossorigin="anonymous"></script>
+    <script src="https://www.webglearth.com/v2/api.js"></script>
 </head>
 
 <body onload="initMap()">
     <div id="left-sidebar">
         <div class="controls">
-            <div class="input-container">
-                <i class="fa fa-search"></i>
-                <input type="text" id="searchField" placeholder="Search..." onkeyup="search()">
-            </div>
-            <div id="searchResultsContainer">
-                <!-- Search results will be dynamically added here -->
-            </div>
+            <h2>Filter</h2>
             <br>
-            <div class="headline-with-icon">
-                <i class="fa-solid fa-flag" style="color: darkcyan;"></i>
-                <h4>Länder</h4>
+            <div class="headline-with-button">
+                <h5>Länder</h5>
+                <button id="selectAllButton" onclick="selectAll()">Alle auswählen</button>
             </div>
-            <p style="font-size: x-small; color: gray;">Klicke die Länder an, um auf diese zu zoomen.</p>
             <div id="countryButtonContainer">
                 <!-- Button will be dynamically added here -->
             </div>
         </div>
     </div>
+    <!-- <div class="input-container">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchField" placeholder="Search.." onkeyup="search()">
+    </div> -->
     <div id="map"></div>
 </body>
 
