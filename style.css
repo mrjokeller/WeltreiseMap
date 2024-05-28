@@ -207,6 +207,7 @@
 }
 
 .button-expand {
+    color: var(--light_gray);
     transition: .375s ease;
     border: none;
     background: none;
