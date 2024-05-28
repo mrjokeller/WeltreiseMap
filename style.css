@@ -3,6 +3,7 @@
     --light_gray: #868686;
     --light_gray_2: #d9d9d9;
     --black: #111;
+    --black_opacity: rgba(17, 17, 17, 0.1);
     --blue: #5E9FFF;
     --blue_opacity: #5E9FFF10;
 }
@@ -136,8 +137,8 @@
     width: 1px;
 
     &:checked+.checkbox-tile {
-        border-color: var(--blue);
-        background-color: var(--blue_opacity);
+        border-color: var(--black);
+        background-color: var(--black_opacity);
         color: var(--black);
 
         &:before {
@@ -148,7 +149,7 @@
 
     &:checked+.button-expand {
         color: var(--black);
-        background-color: var(--blue_opacity);
+        background-color: var(--black_opacity);
 
         &:before {
             transform: scale(1);
@@ -166,8 +167,8 @@
     }
 
     &:focus+.checkbox-tile {
-        border-color: var(--blue);
-        background-color: var(--blue_opacity);
+        border-color: var(--black);
+        background-color: var(--black_opacity);
 
         &:before {
             transform: scale(1);
@@ -197,7 +198,7 @@
     }
 
     &:hover {
-        border-color: var(--blue);
+        border-color: var(--black);
 
         &:before {
             transform: scale(1);
@@ -207,7 +208,7 @@
 }
 
 .button-expand {
-    color: var(--light_gray);
+
     transition: .375s ease;
     border: none;
     background: none;
