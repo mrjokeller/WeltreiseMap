@@ -76,6 +76,15 @@ function createCountryFilter() {
         const input = document.createElement('input');
         input.type = 'checkbox';
         input.classList.add('checkbox-input');
+        input.addEventListener('change', () => {
+            if (input.checked) {
+                selectedCountries.add(country);
+            } else {
+                selectedCountries.delete(country);
+            }
+            updateMarkers();
+            console.log(selectedCountries);
+        });
 
         const checkboxTile = document.createElement('span');
         checkboxTile.classList.add('checkbox-tile');
@@ -86,6 +95,7 @@ function createCountryFilter() {
 
         const buttonExpand = document.createElement('button');
         buttonExpand.classList.add('button-expand');
+        buttonExpand.addEventListener('click', () => filterByCountry(country));
 
         const svgIcon = document.createElement('i');
         svgIcon.classList.add('fa-solid', 'fa-expand');
@@ -138,8 +148,15 @@ function setMapBounds(marker) {
 
 function updateMarkers() {
     markerGroup.clearLayers(); // Clear existing markers
-
-    L.geoJSON(geojsonData, {
+    const filteredData = geojsonData.features.filter(feature => {
+        if (selectedCountries.size > 0) {
+            if (!selectedCountries.has(feature.properties.country)) {
+                return false;
+            }
+        }
+        return true;
+    });
+    L.geoJSON(filteredData, {
         onEachFeature: function (feature, layer) {
             layer.bindPopup(`<b>${feature.properties.name} - ${feature.properties.country}</b>`).openPopup();
         }
