@@ -100,13 +100,13 @@
     font-weight: bold;
 }
 
-#countryButtonContainer {
+.filterButtonContainer {
     display: block;
     flex-wrap: wrap;
     margin-top: 5px;
 }
 
-#countryButtonContainer {
+.filterButtonContainer {
     border: none;
     background-color: var(--off_white);
     display: flex;

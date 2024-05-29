@@ -11,11 +11,12 @@
                 ]
             },
             "properties": {
+                "category": "hotel",
                 "timestamp": "2023-01-01 10:00:00",
                 "name": "On Kloof",
                 "city": "Kapstadt",
                 "country": "Südafrika",
-                "google-link": "https://maps.app.goo.gl/v22GyBN9jVTU9nxi9"
+                "google_link": "https://maps.app.goo.gl/v22GyBN9jVTU9nxi9"
             }
         },
         {
@@ -28,11 +29,12 @@
                 ]
             },
             "properties": {
+                "category": "hotel",
                 "timestamp": "2023-02-01 12:00:00",
                 "name": "Milk Thistle Loft & Studio",
                 "city": "Paternoster",
                 "country": "Südafrika",
-                "google-link": "https://maps.app.goo.gl/4xERHAJdmLyCV1X86"
+                "google_link": "https://maps.app.goo.gl/4xERHAJdmLyCV1X86"
             }
         },
         {
@@ -45,11 +47,12 @@
                 ]
             },
             "properties": {
+                "category": "hotel",
                 "timestamp": "2023-03-01 14:00:00",
                 "name": "Umbhaba Eco Lodge",
                 "city": "Hazyview",
                 "country": "Südafrika",
-                "google-link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
+                "google_link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
             }
         },
         {
@@ -62,11 +65,50 @@
                 ]
             },
             "properties": {
+                "category": "hotel",
                 "timestamp": "2023-03-01 14:00:00",
                 "name": "Elite Residence",
                 "city": "Nairobi",
                 "country": "Kenia",
-                "google-link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
+                "google_link": "https://maps.app.goo.gl/GJ6NFS9TSeXhkWDR6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.4090098,
+                    -33.932001
+                ]
+            },
+            "properties": {
+                "category": "supermarket",
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "Checkers Kloof Street",
+                "city": "Kapstadt",
+                "country": "Südafrika",
+                "chain": "Checkers",
+                "google_link": "https://maps.app.goo.gl/Nu7enqmiXema4hCv9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.22504,
+                    -8.785868
+                ]
+            },
+            "properties": {
+                "category": "supermarket",
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "Pepito Express Tanjung Benoa",
+                "city": "Nusa Dua",
+                "country": "Indonesien",
+                "chain": "Pepito Express",
+                "google_link": "https://maps.app.goo.gl/eDWeM6NfcLJet2KR9"
             }
         }
     ]
