@@ -11,7 +11,7 @@
                 ]
             },
             "properties": {
-                "category": "hotel",
+                "category": "unterkunft",
                 "timestamp": "2023-01-01 10:00:00",
                 "name": "On Kloof",
                 "city": "Kapstadt",
@@ -29,7 +29,7 @@
                 ]
             },
             "properties": {
-                "category": "hotel",
+                "category": "unterkunft",
                 "timestamp": "2023-02-01 12:00:00",
                 "name": "Milk Thistle Loft & Studio",
                 "city": "Paternoster",
@@ -47,7 +47,7 @@
                 ]
             },
             "properties": {
-                "category": "hotel",
+                "category": "unterkunft",
                 "timestamp": "2023-03-01 14:00:00",
                 "name": "Umbhaba Eco Lodge",
                 "city": "Hazyview",
@@ -65,7 +65,7 @@
                 ]
             },
             "properties": {
-                "category": "hotel",
+                "category": "unterkunft",
                 "timestamp": "2023-03-01 14:00:00",
                 "name": "Elite Residence",
                 "city": "Nairobi",
@@ -83,7 +83,7 @@
                 ]
             },
             "properties": {
-                "category": "supermarket",
+                "category": "supermarkt",
                 "timestamp": "2023-01-01 10:00:00",
                 "name": "Checkers Kloof Street",
                 "city": "Kapstadt",
@@ -102,7 +102,7 @@
                 ]
             },
             "properties": {
-                "category": "supermarket",
+                "category": "supermarkt",
                 "timestamp": "2023-01-01 10:00:00",
                 "name": "Pepito Express Tanjung Benoa",
                 "city": "Nusa Dua",
