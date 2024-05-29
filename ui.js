@@ -1,7 +1,6 @@
 // ui.js
 
-import { filterByCountry, updateSelectedCategories, updateSelectedCountries } from './filter.js';
-import { geojsonData, countries, categories } from './data.js';
+import { geojsonData } from './data.js';
 
 export function createFilterUI(containerId, items, updateSelectedItems, filterAction) {
     const container = document.getElementById(containerId);

@@ -2,6 +2,10 @@
 
 export let map;
 export let markerGroup;
+export let hotelMarker;
+export let restaurantMarker;
+export let activityMarker;
+export let supermarketMarker;
 
 export function initMap() {
     const mapbox_url = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXJqb2tlbGxlciIsImEiOiJjbHdweXQ3aWMyb2Q3MmptbTllNnphZHNqIn0.KHaYluQDTamL9J8chbu0wA';
