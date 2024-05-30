@@ -1,6 +1,5 @@
-import { updateMarkers } from './filter.js';
-import { createFilterUI } from './ui.js';
-import { updateSelectedCategories, updateSelectedCountries, filterByCountry } from './filter.js';
+import { createFilterUI } from './js/ui.js';
+import { updateSelectedCategories, updateSelectedCountries, filterByCountry, updateMarkers } from './js/filter.js';
 
 export let geojsonData;
 export let countries = new Set();

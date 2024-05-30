@@ -1,7 +1,7 @@
 // main.js
 
-import { initMap } from './map.js';
-import { loadDataPoints } from './data.js';
+import { initMap } from './js/map.js';
+import { loadDataPoints } from './js/data.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     initMap();

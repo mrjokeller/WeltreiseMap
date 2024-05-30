@@ -1,7 +1,7 @@
 // filter.js
 
-import { markerGroup, setMapBounds } from './map.js';
-import { geojsonData } from './data.js';
+import { markerGroup, setMapBounds } from './js/map.js';
+import { geojsonData } from './js/data.js';
 
 export let selectedCountries = new Set();
 export let selectedCategories = new Set();
