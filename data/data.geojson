@@ -110,6 +110,60 @@
                 "chain": "Pepito Express",
                 "google_link": "https://maps.app.goo.gl/eDWeM6NfcLJet2KR9"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.439679,
+                    -34.027808
+                ]
+            },
+            "properties": {
+                "category": "unterkunft",
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "Dolittle Cottages",
+                "city": "Swellendam",
+                "country": "Südafrika",
+                "google_link": "https://maps.app.goo.gl/yAyqJFJHJCkKeqEe9"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.243285525772933,
+                    -34.41918425034029
+                ]
+            },
+            "properties": {
+                "category": "unterkunft",
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "Hermanus Waterfront",
+                "city": "Hermanus",
+                "country": "Südafrika",
+                "google_link": "https://maps.app.goo.gl/y3hkt8v1ppVS1Zxj6"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.05700680334633,
+                    -34.048411118819885
+                ]
+            },
+            "properties": {
+                "category": "unterkunft",
+                "timestamp": "2023-01-01 10:00:00",
+                "name": "Thesen Island Cottage",
+                "city": "Knysna",
+                "country": "Südafrika",
+                "google_link": "https://maps.app.goo.gl/nzYYaSFZBqM4sHBA9"
+            }
         }
     ]
 }

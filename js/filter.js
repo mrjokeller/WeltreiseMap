@@ -1,7 +1,8 @@
 // filter.js
 
-import { markerGroup, setMapBounds } from './js/map.js';
-import { geojsonData } from './js/data.js';
+import { markerGroup, setMapBounds } from './map.js';
+import { geojsonData } from './data.js';
+import { marker } from './ui.js';
 
 export let selectedCountries = new Set();
 export let selectedCategories = new Set();
@@ -14,8 +15,10 @@ export function updateMarkers() {
         return countryMatch && categoryMatch;
     });
     L.geoJSON(filteredData, {
-        onEachFeature: function (feature, layer) {
-            layer.bindPopup(`<b>${feature.properties.name} - ${feature.properties.country}</b>`).openPopup();
+        pointToLayer: function (feature, latlng) {
+            console.log("Creating marker for", feature);
+            marker(feature.properties.category, latlng).addTo(markerGroup)
+                .bindPopup(`<b>${feature.properties.name}</b>, ${feature.properties.country}`);
         }
     }).addTo(markerGroup);
 }

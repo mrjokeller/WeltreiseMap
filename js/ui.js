@@ -1,6 +1,21 @@
 // ui.js
 
-import { geojsonData } from './js/data.js';
+import { geojsonData } from './data.js';
+
+export const marker = (category, latlng) => {
+    switch (category) {
+        case 'unterkunft':
+            return L.circleMarker(latlng, { radius: 8, color: 'blue', fillColor: 'blue', fillOpacity: 0.5 });
+        case 'restaurant':
+            return L.circleMarker(latlng, { radius: 8, color: 'red', fillColor: 'red', fillOpacity: 0.5 });
+        case 'sehenswürdigkeit':
+            return L.circleMarker(latlng, { radius: 8, color: 'green', fillColor: 'green', fillOpacity: 0.5 });
+        case 'supermarkt':
+            return L.circleMarker(latlng, { radius: 8, color: 'orange', fillColor: 'orange', fillOpacity: 0.5 });
+        default:
+            return L.circleMarker(latlng, { radius: 8, color: 'black', fillColor: 'black', fillOpacity: 0.5 });
+    }
+}
 
 export function createFilterUI(containerId, items, updateSelectedItems, filterAction) {
     const container = document.getElementById(containerId);

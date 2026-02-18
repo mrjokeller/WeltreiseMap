@@ -1,12 +1,12 @@
-import { createFilterUI } from './js/ui.js';
-import { updateSelectedCategories, updateSelectedCountries, filterByCountry, updateMarkers } from './js/filter.js';
+import { createFilterUI } from './ui.js';
+import { updateSelectedCategories, updateSelectedCountries, filterByCountry, updateMarkers } from './filter.js';
 
 export let geojsonData;
 export let countries = new Set();
 export let categories = new Set();
 
 export function loadDataPoints() {
-    fetch("data.geojson")
+    fetch("../data/data.geojson")
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
